@@ -17,7 +17,7 @@ struct ContentView: View {
             List {
                 ForEach(menu) { section in
                     Section(header: Text(section.name)) {
-                         
+                        
                         ForEach(section.items) { item in
                             Text(item.name)
                         }
@@ -25,6 +25,9 @@ struct ContentView: View {
                     }
                 }
             }.navigationBarTitle("Menu")
+                .listStyle(GroupedListStyle())
+            // .listStyle(PlainListStyle())
+            //.listStyle(DefaultListStyle())
         }
     }
 }
