@@ -9,13 +9,24 @@
 import SwiftUI
 
 struct MenuRow: View {
+    
+    var item: MenuItem
+    
     var body: some View {
-        Text("Hello World!")
+        HStack {
+            Image(item.thumbnailImage).clipShape(Circle())
+            
+            VStack(alignment: .leading) {
+                Text(item.name)
+                Text("RS \(item.price)")
+            }
+            
+        }
     }
 }
 
 struct MenuRow_Previews: PreviewProvider {
     static var previews: some View {
-        MenuRow()
+        MenuRow(item: MenuItem.example)
     }
 }
