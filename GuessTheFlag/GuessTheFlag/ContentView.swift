@@ -28,6 +28,9 @@ struct ContentView: View {
                     
                     Text(countries[correctAnswer])
                         .foregroundColor(.white)
+                        .font(.largeTitle)
+                        .fontWeight(.black)
+                    
                 }
                 
                 ForEach(0 ..< 3) { number in
