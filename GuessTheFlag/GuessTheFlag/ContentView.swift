@@ -32,6 +32,9 @@ struct ContentView: View {
                         .font(.largeTitle)
                         .fontWeight(.black)
                     
+                    Text("Your score is \(score)")
+                        .foregroundColor(.white)
+                    
                 }
                 
                 ForEach(0 ..< 3) { number in
