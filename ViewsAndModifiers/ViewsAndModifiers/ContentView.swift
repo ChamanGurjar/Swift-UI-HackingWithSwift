@@ -31,7 +31,18 @@ struct ContentView: View {
         VStack(spacing: 30) {
             Text("Hello, World!")
                 .titleStyle()
-                    
+            
+            Button(action: {
+                self.isWrong.toggle()
+            }) {
+                Text(isWrong ? "Right" : "Wrong")
+                    .font(.largeTitle)
+                    .foregroundColor(.white)
+            }
+            .frame(width: 200, height: 70)
+            .background(Color.blue)
+            .clipShape(Capsule())
+            
         }
     }
 }
