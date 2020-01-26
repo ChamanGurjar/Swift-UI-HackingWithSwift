@@ -17,7 +17,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                TextField("Enter your word",  text: $newWord)
+                TextField("Enter your word",  text: $newWord, onCommit: addNewWord)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding()
                 
@@ -27,6 +27,17 @@ struct ContentView: View {
             }
             .navigationBarTitle(rootWord)
         }
+    }
+    
+    private func addNewWord() {
+        let answer = newWord.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        guard answer.count > 0 else {
+            return
+        }
+        
+        usedWords.insert(answer, at: 0)
+        newWord = ""
     }
 }
 
