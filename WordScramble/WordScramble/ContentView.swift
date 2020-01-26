@@ -19,6 +19,7 @@ struct ContentView: View {
             VStack {
                 TextField("Enter your word",  text: $newWord, onCommit: addNewWord)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .autocapitalization(.none)
                     .padding()
                 
                 List(usedWords, id: \.self) {
