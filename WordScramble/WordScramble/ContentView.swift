@@ -22,6 +22,7 @@ struct ContentView: View {
                     .padding()
                 
                 List(usedWords, id: \.self) {
+                    Image(systemName: "\($0.count).circle")
                     Text($0)
                 }
             }
