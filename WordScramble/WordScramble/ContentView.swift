@@ -28,6 +28,7 @@ struct ContentView: View {
                 }
             }
             .navigationBarTitle(rootWord)
+            .onAppear(perform: startGame)
         }
     }
     
@@ -41,6 +42,18 @@ struct ContentView: View {
         usedWords.insert(answer, at: 0)
         newWord = ""
     }
+    
+    private func startGame() {
+        if let startWordsUrl = Bundle.main.url(forResource: "start", withExtension: "txt") {
+            if let startWords = try? String(contentsOf: startWordsUrl) {
+                let allWords = startWords.components(separatedBy: "\n")
+                rootWord = allWords.randomElement() ?? "Chaman Gurjar"
+                return
+            }
+        }
+        fatalError("Couldn't load start.txt from bundle")
+    }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
