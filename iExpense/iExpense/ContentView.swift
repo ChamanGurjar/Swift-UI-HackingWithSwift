@@ -9,10 +9,13 @@
 import SwiftUI
 
 struct SecondView: View {
+    @Environment(\.presentationMode) var presentationMode
     var name: String
     
     var body: some View {
-        Text("\(name)")
+        Button("Dismiss") {
+            self.presentationMode.wrappedValue.dismiss()
+        }
     }
 }
 
