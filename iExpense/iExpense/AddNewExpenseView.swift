@@ -34,6 +34,7 @@ struct AddNewExpenseView: View {
                 if let finalAmount = Int(self.amount) {
                     let item = ExpenseItem(name: self.name, type: self.type, amount: finalAmount)
                     self.expenses.items.append(item)
+                    self.presentationMode.wrappedValue.dismiss()
                 }
             })
         }
