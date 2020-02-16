@@ -17,6 +17,7 @@
 		67CBCCE823F989310045D474 /* missions.json in Resources */ = {isa = PBXBuildFile; fileRef = 67CBCCE623F989310045D474 /* missions.json */; };
 		67CBCCEA23F98C1D0045D474 /* Astronaut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CBCCE923F98C1D0045D474 /* Astronaut.swift */; };
 		67CBCCEC23F98C740045D474 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CBCCEB23F98C740045D474 /* Bundle-Decodable.swift */; };
+		67CBCCEE23F98F2D0045D474 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CBCCED23F98F2C0045D474 /* Mission.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		67CBCCE623F989310045D474 /* missions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = missions.json; sourceTree = "<group>"; };
 		67CBCCE923F98C1D0045D474 /* Astronaut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astronaut.swift; sourceTree = "<group>"; };
 		67CBCCEB23F98C740045D474 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
+		67CBCCED23F98F2C0045D474 /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				67CBCCD323F967450045D474 /* SceneDelegate.swift */,
 				67CBCCD523F967450045D474 /* ContentView.swift */,
 				67CBCCE923F98C1D0045D474 /* Astronaut.swift */,
+				67CBCCED23F98F2C0045D474 /* Mission.swift */,
 				67CBCCEB23F98C740045D474 /* Bundle-Decodable.swift */,
 				67CBCCD723F9674E0045D474 /* Assets.xcassets */,
 				67CBCCE523F989310045D474 /* astronauts.json */,
@@ -160,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67CBCCEE23F98F2D0045D474 /* Mission.swift in Sources */,
 				67CBCCD223F967450045D474 /* AppDelegate.swift in Sources */,
 				67CBCCD423F967450045D474 /* SceneDelegate.swift in Sources */,
 				67CBCCEC23F98C740045D474 /* Bundle-Decodable.swift in Sources */,
