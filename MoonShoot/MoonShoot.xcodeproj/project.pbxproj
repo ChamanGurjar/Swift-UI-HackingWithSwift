@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		674484F223FCFB4D0086AC5F /* MissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674484F123FCFB4D0086AC5F /* MissionView.swift */; };
 		67CBCCD223F967450045D474 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CBCCD123F967450045D474 /* AppDelegate.swift */; };
 		67CBCCD423F967450045D474 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CBCCD323F967450045D474 /* SceneDelegate.swift */; };
 		67CBCCD623F967450045D474 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CBCCD523F967450045D474 /* ContentView.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		674484F123FCFB4D0086AC5F /* MissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionView.swift; sourceTree = "<group>"; };
 		67CBCCCE23F967450045D474 /* MoonShoot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoonShoot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67CBCCD123F967450045D474 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67CBCCD323F967450045D474 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				67CBCCE923F98C1D0045D474 /* Astronaut.swift */,
 				67CBCCED23F98F2C0045D474 /* Mission.swift */,
 				67CBCCEB23F98C740045D474 /* Bundle-Decodable.swift */,
+				674484F123FCFB4D0086AC5F /* MissionView.swift */,
 				67CBCCD723F9674E0045D474 /* Assets.xcassets */,
 				67CBCCE523F989310045D474 /* astronauts.json */,
 				67CBCCE623F989310045D474 /* missions.json */,
@@ -163,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				674484F223FCFB4D0086AC5F /* MissionView.swift in Sources */,
 				67CBCCEE23F98F2D0045D474 /* Mission.swift in Sources */,
 				67CBCCD223F967450045D474 /* AppDelegate.swift in Sources */,
 				67CBCCD423F967450045D474 /* SceneDelegate.swift in Sources */,
