@@ -51,7 +51,7 @@ struct CheckOutView: View {
                 print("No data in response: \(error?.localizedDescription ?? "Unknown Error")")
                 return
             }
-        }
+        }.resume()
     }
 }
 
