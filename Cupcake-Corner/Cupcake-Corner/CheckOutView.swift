@@ -25,12 +25,32 @@ struct CheckOutView: View {
                         .font(.title)
                     
                     Button("Place Order") {
-                        // place the order
+                        self.placeOrder()
                     }
                     .padding()
                 }
             }
             
+        }
+    }
+    
+    private func placeOrder() {
+        guard let data = try? JSONEncoder().encode(order) else {
+            print("Couldn't encoded the order dto")
+            return
+        }
+        
+        let url = URL(string: "https://reqres.in/api/cupcakes")!
+        var request = URLRequest(url: url)
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.httpMethod = "POST"
+        request.httpBody = data
+        
+        URLSession.shared.dataTask(with: request) { (data, response, error) in
+            guard let data = data else {
+                print("No data in response: \(error?.localizedDescription ?? "Unknown Error")")
+                return
+            }
         }
     }
 }
