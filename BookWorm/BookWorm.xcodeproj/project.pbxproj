@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67C569AF2432F4DD006A3C65 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C569AE2432F4DD006A3C65 /* DetailView.swift */; };
 		67EA2CE82432393F007FD83C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EA2CE72432393F007FD83C /* AppDelegate.swift */; };
 		67EA2CEA2432393F007FD83C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EA2CE92432393F007FD83C /* SceneDelegate.swift */; };
 		67EA2CED2432393F007FD83C /* BookWorm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 67EA2CEB2432393F007FD83C /* BookWorm.xcdatamodeld */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		67C569AE2432F4DD006A3C65 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		67EA2CE42432393F007FD83C /* BookWorm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookWorm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67EA2CE72432393F007FD83C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67EA2CE92432393F007FD83C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				67EA2CE92432393F007FD83C /* SceneDelegate.swift */,
 				67EA2CEE2432393F007FD83C /* ContentView.swift */,
 				67EA2CFE24323E73007FD83C /* AddBookView.swift */,
+				67C569AE2432F4DD006A3C65 /* DetailView.swift */,
 				67EA2D0024325359007FD83C /* RatingView.swift */,
 				67EA2D022432569B007FD83C /* EmojiRatingView.swift */,
 				67EA2CF024323945007FD83C /* Assets.xcassets */,
@@ -159,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67EA2CED2432393F007FD83C /* BookWorm.xcdatamodeld in Sources */,
+				67C569AF2432F4DD006A3C65 /* DetailView.swift in Sources */,
 				67EA2CE82432393F007FD83C /* AppDelegate.swift in Sources */,
 				67EA2D032432569B007FD83C /* EmojiRatingView.swift in Sources */,
 				67EA2CEF2432393F007FD83C /* ContentView.swift in Sources */,
