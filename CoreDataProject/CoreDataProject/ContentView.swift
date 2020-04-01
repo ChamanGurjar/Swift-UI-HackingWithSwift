@@ -10,27 +10,24 @@ import SwiftUI
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) var moc
-    @FetchRequest(entity: Wizard.entity(), sortDescriptors: []) var wizards: FetchedResults<Wizard>
+    @FetchRequest(entity: Ship.entity(), sortDescriptors: [], predicate: NSPredicate(format: "universe == 'Star Wars'")) var ships: FetchedResults<Ship>
+    
+    /**
+     Predicates =>
+     
+     1. NSPredicate(format: "universe == %@", "Star Wars"))
+     2. NSPredicate(format: "name < %@", "F")) var ships: FetchedResults<Ship>
+     3. NSPredicate(format: "universe IN %@", ["Aliens", "Firefly", "Star Trek"])
+     4. NSPredicate(format: "name BEGINSWITH %@", "E"))
+     5. NSPredicate(format: "name BEGINSWITH[c] %@", "e"))
+     6. NSPredicate(format: "NOT name BEGINSWITH[c] %@", "e"))
+     
+     A great article = https://www.hackingwithswift.com/books/ios-swiftui/filtering-fetchrequest-using-nspredicate
+     
+     */
     
     var body: some View {
-        VStack {
-            List(wizards, id: \.self) { wizard in
-                Text(wizard.name ?? "Unknown")
-            }
-            
-            Button("Add") {
-                let wizard = Wizard(context: self.moc)
-                wizard.name = "Dumbldoor"
-            }
-            
-            Button("Save") {
-                do {
-                    try self.moc.save()
-                } catch {
-                    print (error.localizedDescription)
-                }
-            }
-        }
+        Text("")
     }
 }
 
